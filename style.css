@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+#back {
+    width: 100%;
+    height: 100vh;
+}
+
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#front {
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+#main_area {
+    position: relative;
+    width: 80%;
+    max-width: 1920px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+#nav img {
+    height: 60px;
+}
+
+#navleft, #navright {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+#nav a {
+    pointer-events: all;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#content {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 55%;
+    left: 0;
+    transform: translate(0%, -50%);
+    width: 100%;
+}
+
+#content-left {
+    min-width: 50%;
+}
+
+.elems {
+    position: relative;
+    height: 14vh;
+    overflow: hidden;
+}
+
+.elems h1:nth-child(1) {
+    top: 0;
+}
+.elems h1 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-family: "kajiro";
+    font-size: 19vh;
+    line-height: .85;
+    font-weight: 100;
+    color: white;
+    letter-spacing:2px;
+}
+
+#content-left button {
+    pointer-events: all;
+    font-size: 3vw;
+    padding: .8vw 4vw;
+    font-family: "kajiro";
+    letter-spacing: 1px;
+    margin-top: 3vw;
+}
+
+#content-left button:hover {
+    cursor: pointer;
+}
+
+#content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 17%;
+    color: white;
+}
+
+#content-right p {
+    text-align: right;
+    font-size: 12px;
+}
+
+#image {
+    pointer-events: all;
+    width: 100%;
+    height: 170px;
+    background-image: url(./images/Side_Image.png);
+    background-size:cover;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    transform: scale(1.2);
+}
+
+#content-right p:nth-child(3) {
+    margin-bottom: 40px;
+}
